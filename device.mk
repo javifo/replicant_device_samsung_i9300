@@ -103,11 +103,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.vr@1.0-impl \
 
-# Gatekeeper
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl \
-    android.hardware.gatekeeper@1.0-service \
-
 # DRM – check if this needs to be removed!
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
@@ -133,9 +128,6 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.service.adb.enable=1 \
     persist.sys.usb.config=adb
-
-# Hack to get a working GateKeeper
-PRODUCT_PACKAGES += gatekeeper.default
 
 # Enable flashing through heimdall
 PRODUCT_COPY_FILES += device/samsung/i9300/resize2fs_partitions.sh:system/bin/resize2fs_partitions.sh
