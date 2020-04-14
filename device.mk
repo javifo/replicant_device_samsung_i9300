@@ -26,7 +26,6 @@ PRODUCT_PACKAGES += \
     gralloc.gbm \
     hwcomposer.drm \
     libGLES_mesa \
-    hwcomposer.ranchu \
     libEGL_swiftshader \
     libGLESv2_swiftshader \
     android.hardware.graphics.composer@2.1-impl \
