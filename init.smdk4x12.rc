@@ -44,8 +44,6 @@ on early-boot
     chmod 777 /sys/class/backlight/panel/brightness
     chown graphics graphics /sys/kernel/debug/sync/info
 
-    setprop debug.sf.no_hw_vsync 1
-
 on init
     # Create mount-point for ConfigFS USB gadgets
     # Add standard gadget entries
