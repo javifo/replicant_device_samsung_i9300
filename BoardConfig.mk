@@ -36,8 +36,8 @@ BOARD_VENDOR := samsung
 #   target.
 # The vendor/lineage/build/tasks/kernel.mk file
 # was modified to add support for that feature.
-TARGET_KERNEL_SOURCE := kernel/replicant/linux
-TARGET_KERNEL_CONFIG := replicant_defconfig
+TARGET_KERNEL_SOURCE := kernel/replicant/midas
+TARGET_KERNEL_CONFIG := replicant_i9300_defconfig
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 BOARD_DTB_IMAGE_NAME := exynos4412-i9300.dtb
 
