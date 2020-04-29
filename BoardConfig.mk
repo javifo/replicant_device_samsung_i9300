@@ -82,6 +82,9 @@ BOARD_HOSTAPD_PRIVATE_LIB   := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
 #WIFI_DRIVER_FW_PATH_STA     := "/vendor/firmware/fw_bcmdhd.bin"
 WIFI_BUS := SDIO
 
+# Low-memory device
+MALLOC_SVELTE := true
+
 TARGET_USES_64_BIT_BINDER := true
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
