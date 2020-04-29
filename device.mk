@@ -136,3 +136,16 @@ PRODUCT_COPY_FILES += device/samsung/i9300/resize2fs_partitions.sh:system/bin/re
 PRODUCT_COPY_FILES += device/samsung/i9300/prevent_suspend.sh:system/bin/prevent_suspend.sh
 PRODUCT_COPY_FILES += device/samsung/i9300/prevent_suspend.rc:system/etc/init/prevent_suspend.rc
 
+# Wifi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service \
+    libwpa_client \
+    hostapd \
+    wpa_supplicant \
+    wpa_supplicant.conf \
+
+PRODUCT_COPY_FILES += \
+    device/samsung/i9300/root/firmware/brcmfmac4334-sdio.bin:$(TARGET_COPY_OUT_VENDOR)/lib/firmware/brcm/brcmfmac4334-sdio.bin \
+    device/samsung/i9300/root/firmware/brcmfmac4334-sdio.txt:$(TARGET_COPY_OUT_VENDOR)/lib/firmware/brcm/brcmfmac4334-sdio.txt \
+    device/samsung/i9300/root/firmware/regulatory.db:$(TARGET_COPY_OUT_VENDOR)/lib/firmware/regulatory.db \
+    device/samsung/i9300/root/firmware/regulatory.db.p7s:$(TARGET_COPY_OUT_VENDOR)/lib/firmware/regulatory.db.p7s \
